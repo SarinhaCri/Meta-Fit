@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Meta Fit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link rel="shortcut icon" href="images/logo,.jpg" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" /> 
+    
+    <!-- Bootstrap Icons --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" /> 
+    
+    <!-- CSS do projeto --> 
+    <link rel="stylesheet" href="css\style.css"/>
+    
+   
+
+    <!-- JavaScript Bootstrap --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-gradient">
+    <header>
+        <!-- NavBar-->
+        <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+            <div class="container py-3">
+                <a class="navbar-brand primary-color" href="index.html">
+                    <img src="images/logo,.jpg" alt="Logo Meta Fit">
+                    <span>META FIT</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="cartoes">
+        <main class="cards">
+            <section class="card horarios bg-primary-color">
+                <div class="icon">
+                    <img src="images/logo,.jpg" alt="Cardápio Meta Fit">
+                </div>
+                <h3>Cardápio</h3>
+                <span>Clique abaixo para você ver os Cardápios</span>
+                <button class="btn" onclick="window.location.href = 'cardapio.html'">CLIQUE AQUI</button>
+            </section>
+            <section class="card onibus bg-primary-color">
+                <div class="icon">
+                    <img src="images/logo,.jpg" alt="Horários de Treinos">
+                </div>
+                <h3>Treinos</h3>
+                <span>Clique abaixo para você ver os Treinos</span>
+                <button class="btn" onclick="window.location.href = 'treinos.html'">CLIQUE AQUI</button>
+            </section>
+        </main>
+    </section>
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Meta Fit - Sara Cristina </p>
+    </footer>
+</body>
+</html>

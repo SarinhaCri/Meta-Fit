@@ -1,0 +1,277 @@
+/* Configurações Globais */
+* {
+    font-family: 'BIZ UDPMincho', serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: linear-gradient(120deg, #efe5f0, #f9f1fc);
+    color: #3a0541;
+  }
+  
+  /* Cores de fundo */
+  .bg-primary-color {
+    background: white;
+  }
+  
+  .bg-secondary-color {
+    background: linear-gradient(135deg, #4e0954, #32063b);
+  }
+  
+  .bg-dark-color {
+    background-color: #2b0230;
+  }
+  
+  /* Cores de texto */
+  .primary-color {
+    color: #3e0141;
+  }
+  
+  .secondary-color {
+    color: #977f9c;
+  }
+  
+  /* NAVBAR */
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #2d0433;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Menu de Navegação */
+  .nav-menu {
+    display: flex; /* Alinha os botões em linha */
+    margin-left: auto; /* Afasta o menu da logo */
+    list-style: none; /* Remove os pontos de lista */
+  }
+  
+  .nav-menu a {
+    color: #3a0541;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.3s ease, transform 0.2s;
+  }
+  
+  #navbar a {
+    color: #3a0541;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s;
+  }
+  
+  #navbar a:hover {
+    color: #6e2d91;
+    transform: scale(1.05);
+  }
+  
+  #navbar .active {
+    border-bottom: 2px solid #c47cc7;
+  }
+  
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+  
+  .navbar-brand img { /*logo do centro*/
+    width: 50px;
+    margin-bottom: 0.5em;
+  }
+  
+  .navbar-brand span {
+    font-weight: 700;
+    font-size: 1.8em;
+  }
+  
+  /* Menu Botões Cardápio e Treino */
+  .nav-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+  }
+  
+  .nav-menu a {
+    padding: 10px 15px;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #6b4394, #9b5ab7);
+    color: white;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+  }
+  
+  .nav-menu a:hover {
+    background: linear-gradient(90deg, #9b5ab7, #6b4394);
+    transform: scale(1.05);
+  }
+  
+  /* Cards Dinâmicos */
+  main.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px;
+  }
+  
+  main.cards section.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  main.cards section.card img {
+    width: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  main.cards section.card img:hover {
+    transform: rotate(5deg) scale(1.05);
+  }
+  
+  main.cards section.card h3 {
+    font-size: 1.2em;
+    margin: 12px 0;
+  }
+  
+  main.cards section.card span {
+    font-weight: 300;
+    max-width: 250px;
+    font-size: 0.9em;
+  }
+  
+  /* Botões "clique aqui com efeitos" */
+  .btn {
+    color: rgb(122, 45, 143);
+    background: linear-gradient(90deg, #d8cddf, #e4d1ee);
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* Para permitir margem */
+    margin: 10px; /* Adiciona espaço entre os botões */
+  }
+  
+  .btn:hover::after {
+    left: 100%;
+  }
+  
+  .btn:hover {
+    background: linear-gradient(90deg, #9b5ab7, #6b4394);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilo da Tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaço entre bordas */
+  }
+  
+  th, td {
+    border: 1px solid #2b0230; /* Adiciona bordas */
+    padding: 10px; /* Adiciona espaço interno */
+    text-align: left; /* Alinhamento do texto */
+  }
+  
+  th {
+    background-color: #4e0954; /* Cor de fundo para cabeçalho */
+    color: white; /* Cor do texto para cabeçalho */
+  }
+  
+  /* Animações */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Responsividade */
+  @media screen and (max-width: 750px) {
+    main.cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #navbar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0;
+    }
+  
+    .navbar-brand {
+      position: static;
+      transform: none;
+      margin-bottom: 10px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .nav-menu a {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    .btn {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0; /* Adiciona espaço entre os botões */
+    }
+  }
+  
